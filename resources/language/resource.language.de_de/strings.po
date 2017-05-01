@@ -73,9 +73,5 @@ msgid "Video on Demand"
 msgstr "Video auf Abruf"
 
 msgctxt "#30111"
-msgid "EPG"
-msgstr "EPG"
-
-msgctxt "#30112"
-msgid "Program Guide"
+msgid "TV Schedule"
 msgstr "Fernsehprogramm"

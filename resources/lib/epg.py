@@ -61,9 +61,25 @@ def listings():
                         #
             for key in sorted(proglist.iterkeys()):
                 #
-                item_label = '{time}{live} {title}'.format(time=proglist[key]['dt_start'].strftime("%d-%m-%Y %H:%M"),
-                                                           live=proglist[key]['live'],
-                                                           title=proglist[key]['title_full'])
+                if proglist[key]['dt_start'] <= datetime.datetime.now() and proglist[key]['dt_end'] >= datetime.datetime.now():
+                    datetime_lbl = 'NOW'
+                else:
+                    if proglist[key]['dt_start'].date() == datetime.datetime.now().date():
+                        start_date = 'Today'
+                    elif  proglist[key]['dt_start'].date() == (datetime.datetime.now() + datetime.timedelta(days=1)).date():
+                        start_date = 'Tomorrow'
+                    else:
+                        start_date = proglist[key]['dt_start'].strftime("%d-%m"),
+                    #
+                    datetime_lbl = '{start_date} {start_time}'.format(start_date=start_date,
+                                                                      start_time=proglist[key]['dt_start'].strftime("%H:%M"))
+                #
+                duration = (proglist[key]['dt_end'] - proglist[key]['dt_start']) // datetime.timedelta(minutes=1)
+                #
+                item_label = '{datetime_lbl}{live} {title} [{duration} mins]'.format(datetime_lbl=datetime_lbl,
+                                                                                live=proglist[key]['live'],
+                                                                                title=proglist[key]['title_full'],
+                                                                                duration=duration)
                 #
                 items.add({'mode': '#', 'title': item_label, 'thumb': proglist[key]['img']})
         #

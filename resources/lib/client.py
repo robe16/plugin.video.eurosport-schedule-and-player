@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import simple_requests as requests
+import resources.lib.simple_requests as requests
 from common import *
 
 class Client:

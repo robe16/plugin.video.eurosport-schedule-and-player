@@ -12,6 +12,7 @@ def channel(data):
         for i in obj:
             if i.get('streams', None):
                 items.add(Channels(i).item)
+    items.add({'mode':'epg', 'title':getString(30111), 'plot':getString(30112)})
     items.add({'mode':'sports', 'title':getString(30101), 'plot':getString(30102)})
     items.list()
 

@@ -71,3 +71,11 @@ msgstr ""
 msgctxt "#30102"
 msgid "Video on Demand"
 msgstr ""
+
+msgctxt "#30111"
+msgid "EPG"
+msgstr ""
+
+msgctxt "#30112"
+msgid "Program Guide"
+msgstr ""

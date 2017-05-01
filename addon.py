@@ -2,6 +2,7 @@
 
 from resources.lib.client import Client
 from resources.lib import esp
+from resources.lib import epg
 from resources.lib import cache
 from resources.lib.common import *
 
@@ -10,6 +11,8 @@ client = Client()
 def run():
     if mode == 'root':
         esp.channel(client.channels())
+    elif mode == 'epg':
+        epg.listings()
     elif mode == 'sports':
         data = client.catchups()
         cache.cache_data(data)

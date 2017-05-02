@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.eurosportplayer" version="1.8.0~beta" name="Eurosport Player" provider-name="Jin">
+<addon id="plugin.video.eurosportplayer" version="1.8.0" name="Eurosport Player" provider-name="Jin">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
     </requires>
@@ -16,7 +16,7 @@
         <disclaimer lang="de_DE">Inoffizielles Addon - Benutzung auf eigene Gefahr</disclaimer>
         <disclaimer lang="en_GB">Unofficial Addon - Use at your own risk</disclaimer>
         <news>
-Update 1.8.0: TV Schdule added by robe16
+Update 1.8.0: TV Schedule added by robe16
         </news>
     </extension>
 </addon>

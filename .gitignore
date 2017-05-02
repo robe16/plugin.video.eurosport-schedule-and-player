@@ -1,3 +1,6 @@
+# Zipped add-on files for installation on Kodi
+/*.zip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

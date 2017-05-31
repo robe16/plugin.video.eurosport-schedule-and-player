@@ -1,4 +1,11 @@
 # plugin.video.eurosport-schedule-and-player
+
+```
+NOTE:
+From version 1.8.0 of Jin's eurosportplayer addon, an EPG has been included.
+This version will therefore not be supported in the future in favour of using the original addon.
+```
+
 Mirror of Eurosport Player (https://github.com/kodinerds/repo/tree/master/plugin.video.eurosportplayer)
 
 Updated version 1.7.1 to include TV Schedule.
